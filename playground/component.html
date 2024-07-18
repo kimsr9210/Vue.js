@@ -36,6 +36,18 @@
       },
     });
 
+
+    //인스턴스는 여러개 생성할 수 있음 
+    //물론 서비스 구현할때는 여러개 생성할 필요 x
+    new Vue({
+        el : '#app2',
+        components : {
+            'app-footer': {
+                template: '<footer>footer</footer>'
+            }
+        }
+
+    });
   </script>
 </body>
 </html>
