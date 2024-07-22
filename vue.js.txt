@@ -95,3 +95,8 @@ Vue.js 특징 중에 컴포넌트라는 특징이 있음
 전달이 된 값이 화면에 바로 반영되서 그려지는게 Reactivity 
 
 ㅁevent emit
+ㅁevent emit으로 콘솔 출력하기
+하위 컴포넌트에서 상위 컴포넌트로 통신하여 이벤트를 발생하는 방식
+ㅁ[실습안내]event emit 실습 안내
+ㅁ[실습안내]event emit 실습 풀이
+ㅁ뷰 인스턴스에서의 this
