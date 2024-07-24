@@ -7,8 +7,9 @@
 </head>
 <body>
     <div id="app">
-        <app-header></app-header>
-        <app-content></app-content>
+        <!--<app-header v-bind:프롭스속성이름></app-header> app header에 num전달-->
+        <app-header v-bind:propsdata="num"></app-header>
+        <app-content v-on:pass="deliverNum"></app-content>
       </div>
     
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -16,13 +17,14 @@
         <!--같은 컴포넌트 레벨에서의 통신 방식 appContent에서 appHeader로 10을 넘겨줘보기-->
 
         let appHeader = {
-          template: '<div>header</div>'
+          template: '<div>header</div>',
+          props:['propsdata']
         }
         let appContent = {
           template: '<div>content<button v-on:click="passNum">pass</button></div>',
           methods:{
             passNum: function(){
-                this.$emit('pass', 10); //pass라는 이벤트를 넘김
+                this.$emit('pass', 10); //passMethod라는 이벤트를 넘김
             }
           }
         }
@@ -34,7 +36,12 @@
             'app-header': appHeader,
             'app-content': appContent
           },
-          data : {num : 0} //Root에 데이터를 선언해야함
+          data : {num : 0}, //Root에 데이터를 선언해야함
+          methods:{
+            deliverNum : function(value){
+                this.num = value;
+            }
+          }
         })
     </script>
     
