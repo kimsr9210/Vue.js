@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <app-header></app-header>
+        <app-content></app-content>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script>
+        <!--같은 컴포넌트 레벨에서의 통신 방식 appContent에서 appHeader로 10을 넘겨줘보기-->
+
+        let appHeader = {
+          template: '<div>header</div>'
+        }
+        let appContent = {
+          template: '<div>content<button v-on:click="passNum">pass</button></div>',
+          methods:{
+            passNum: function(){
+                this.$emit('pass', 10); //pass라는 이벤트를 넘김
+            }
+          }
+        }
+
+    
+        new Vue({ //최상이 컴포넌트 Root
+          el: '#app',
+          components: { //컴포넌트 등록
+            'app-header': appHeader,
+            'app-content': appContent
+          },
+          data : {num : 0} //Root에 데이터를 선언해야함
+        })
+    </script>
+    
+</body>
+</html>
