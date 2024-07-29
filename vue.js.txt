@@ -127,3 +127,12 @@ url에 login이라고 쳐봐!
 http://127.0.0.1:5500/playground/router.html#/login
 url이 로그인인 경우에는 routerview에 최종적으로 로그인 컴포넌트의 내용이 들어감
 
+ㅁ링크를 이용한 페이지 이동 및 router-link 태그 설명
+라우터에서 페이지 이동을 하기 위한 링크 태그임 
+<router-link to="/login">Login</router-link>
+<router-link to="/main">Main</router-link>
+
+<a href=""></a> 와 같음
+
+ㅁ라우터 정리 및 학습 방향 안내
+
