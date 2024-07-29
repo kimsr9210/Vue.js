@@ -12,12 +12,13 @@
     <script src="https://unpkg.com/vue-router@3.5.3/dist/vue-router.js"></script>
 
     <script>
-        new VueRouter({
+        let router = new VueRouter({
 
         });
 
         new Vue({
-            el: '#app'
+            el: '#app',
+            router: router //이 변수의 값을 내용으로 연결하고 왼쪽의 속성을 연결한다.
         });
     </script>
 </body>
