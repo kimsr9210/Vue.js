@@ -117,5 +117,7 @@ CDN 방식과 NPM 방식 있음
 <script src="https://unpkg.com/vue-router@3.5.3/dist/vue-router.js"></script> //뷰라우터
 
 ㅁ뷰 라우터 인스턴스 연결 및 초기 상태 안내
+ㅁ[실습안내]routers 속성 설명 및 실습 안내
+ㅁ라우터가 표시되는 영역 및 router-view 태그 설명
 
 
