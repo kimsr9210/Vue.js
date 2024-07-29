@@ -29,6 +29,7 @@
         }
 
         let router = new VueRouter({
+            mode: 'history', //url에 # 없애는 방법
             //페이지의 라우팅 정보 : 어떤 url로 이동했을 때 어떤 페이지가 뿌려질지에 대한 정보가 routes속성의 배열로 담김
             routes:[
                 //페이지의 갯수만큼 객체의 갯수가 필요
