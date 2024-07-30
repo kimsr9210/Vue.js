@@ -154,3 +154,5 @@ Promise 자바 스크립트의 비동기 처리 패턴을 의미
 2. promise
 3. promise + generator
 4. async & await
+
+ㅁaxios 실습 및 this 설명
