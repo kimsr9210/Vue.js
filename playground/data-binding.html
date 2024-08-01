@@ -19,10 +19,19 @@
         <div v-show="loading">
             Loading...
         </div>
+
+        <!--TODO:인풋 박스를 만들고 입력된 값을 P태그에 출력해보세요-->
+        <input type="text" v-model="message">
+        <p>{{message}}</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
+        //아래 두가지의 접근 방식은 뷰가 없을때 접근 방식임.
+        //let input1 = document.querySelector('input');
+        //let input2 = $('input');
+
+
         new Vue({
             el : '#app',
 
@@ -32,7 +41,8 @@
                 num : 10,
                 uuid : 'abc1234',
                 name : 'text-blue',
-                loading: true
+                loading: true,
+                message:''
             },
             computed: {
                 doubleNum : function(){
