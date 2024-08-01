@@ -207,3 +207,6 @@ new Vue({
 		show : false
 	}
 })
+
+ㅁ데이터 바인딩과 computed 속성
+computed : 데이터의 값에 따라서 바뀌는 값을 정의할때 사용 
