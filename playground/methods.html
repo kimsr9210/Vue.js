@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!--<button v-on:click="메서드이름">click me</button>-->
+        <button v-on:click="logText">click me</button>
+        <input type="text" v-on:keyup="logText"> <!--input에 키가 입력될때 마다 메서드 실행-->
+        <input type="text" v-on:keyup.enter="logText"> <!--엔터를 쳣을때 마다 메서드 실행-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el : '#app',
+            methods:{
+                logText: function(){
+                    console.log('clicked');
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
