@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         {{str1}}
-        <p>{{num}}</p>
+        <p v-bind:id="uuid" v-bind:class="name">{{num}}</p> <!--이 아이디를 바인딩(연결) 하다 -->
         <p>{{doubleNum}}</p>
     </div>
 
@@ -21,6 +21,8 @@
             data:{
                 str1 : 'hi22',
                 num : 10,
+                uuid : 'abc1234',
+                name : 'text-blue'
             },
             computed: {
                 doubleNum : function(){
