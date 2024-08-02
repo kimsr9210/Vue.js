@@ -230,3 +230,41 @@ v-on 키도브 입력, 마우스 입력에 대해서 받을 수 있는 뷰 디�
 ㅁwatch 속성 vs computed 속성
 웬만하면 컴피티드를 쓰는게좋고, 왓치보다는 ㅋ머피티드가 대부분의 케이스에 적합함
 코드가 너저분해질 수 있음
+
+ㅁcomputed 속성을 이용한 클래스 코드 작성 방법
+*직관적인 코드작성법 배우기
+클래스를 넣을때 여러가지 조건을 넣을 수 있음
+조건에 따라서 클래스 네임이 들어갈 수 있음
+
+방법1.
+    <div id="app">
+        <p v-bind:class="cname">Hello/</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el : '#app',
+			cname : 'blue-text',
+            data: {
+                isError: false
+            }
+        });
+	</script>		
+방법2.
+    <div id="app">
+        <p v-bind:class="warning: isError">Hello/</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el : '#app',
+            data: {
+                isError: false
+            }
+        });
+	</script>
+	
+방법3.
+github에서 확인하기	
