@@ -280,3 +280,5 @@ vue init webpack-simple '프로젝트 폴더 위치'
 
 [Vue CIL 3.x]
 vue create '프로젝트 폴더 위치'
+
+ㅁCLI로 생성한 프로젝트 폴더 구조 확인 및 main.js파일 설명
