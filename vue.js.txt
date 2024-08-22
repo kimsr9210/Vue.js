@@ -294,6 +294,8 @@ npm run serve
 싱글 파일 컴포넌트(vue파일): js, css를 한 팔일에 관리하겠다 
 
 ㅁApp.vue와 HelloWorld.vue 설명
+ㅁ싱글 파일 컴포넌트에 배운 내용 적용하여 개발 시작하기
+
 
 
 
