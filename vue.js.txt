@@ -295,6 +295,9 @@ npm run serve
 
 ㅁApp.vue와 HelloWorld.vue 설명
 ㅁ싱글 파일 컴포넌트에 배운 내용 적용하여 개발 시작하기
+ㅁ싱글 파일 컴포넌트 체계에서 컴포넌트 등록하기
+프로젝트 디렉터리로 이동 : cd vue-cli 
+서버 실행 : npm run serve
 
 
 
