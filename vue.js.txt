@@ -299,6 +299,8 @@ npm run serve
 프로젝트 디렉터리로 이동 : cd vue-cli 
 서버 실행 : npm run serve
 
+ㅁ싱글 파일 컴포넌트에서 props 속성 사용하는 방법
+ㅁ싱글 파일 컴포넌트에서 event 구현하기
 
 
 
