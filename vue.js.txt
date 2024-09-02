@@ -308,3 +308,5 @@ npm run serve
 서버 종류 : 컨트롤+c
 창닫기 : 휴지통 버튼
 
+ㅁv-model 속성과 submit 이벤트 처리
+이벤트 버블링 : https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/

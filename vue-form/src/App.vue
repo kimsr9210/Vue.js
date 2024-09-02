@@ -1,20 +1,30 @@
 <template>
-  <form action="">
+  <form v-on:submit="submitForm">
     <div>
       <label from="username">id : </label>
-      <input id="username" type="text">
+      <input id="username" type="text" v-model="username">
     </div>
     <div>
       <label from="password">pw : </label>
-      <input id="password" type="password">
+      <input id="password" type="password" v-model="password">
     </div>
-    <button>login</button>
+    <button type="submit">login</button>
   </form>
 </template>
 
 <script>
 export default {
-
+  data:function(){
+    return {
+      username:'',
+      password:''
+    }
+  },
+  methods:{
+    submitForm:function(){
+      console.log(this.username, this.password);
+    }
+  }
 }
 </script>
 
