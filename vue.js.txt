@@ -310,3 +310,5 @@ npm run serve
 
 ㅁv-model 속성과 submit 이벤트 처리
 이벤트 버블링 : https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/
+
+ㅁaxios를 이용한 데이터 전송 및 form구현
