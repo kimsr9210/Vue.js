@@ -319,6 +319,8 @@ Axios : HTTP 프로토콜을 이용한 HTTP 통신 라이브러리
 터미널 -> npm i axios
 
 ㅁ수업정리
+공식 문서 : https://vuejs.org/api/
+
 -Reactivity
 -인스턴스
 -컴포넌트
