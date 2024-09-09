@@ -1,0 +1,8 @@
+vue.js 중급 강좌 - 웹앱 제작으로 배워보는 vue.js ES6, Vuex
+github - https://github.com/joshua1988/vue-intermediate
+
+-섹션2. Todo App - 프로젝트 소개 및 구성
+ㅁ뷰 CLI로 프로젝트 생성하기
+터미널 -> vue create vue-todo
+서버실행 : npm run serve
+ㅁ프로젝트 소개 및 컴포넌트 설계 방법
