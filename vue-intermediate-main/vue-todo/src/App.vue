@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <TodoHeader></TodoHeader>
+    <TodoInput></TodoInput>
+    <TodoList></TodoList>
+    <TodoFooter></TodoFooter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Vue from 'vue'; 
+import TodoHeader from './components/TodoHeader.vue'
+import TodoFooter from './components/TodoFooter.vue'
+import TodoInput from './components/TodoInput.vue'
+import TodoList from './components/TodoList.vue'
+
+let my_cmp = {
+  template: '<div>my component</div>'
+};
+
+new Vue({
+  el:'',
+  components:{
+    'my-cmp' : my_cmp
+  }
+});
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    //컴포넌트 태그명 : 컴포넌트 내용
+    'TodoHeader' : TodoHeader,
+    'TodoFooter' : TodoFooter,
+    'TodoInput' : TodoInput,
+    'TodoList' : TodoList
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
