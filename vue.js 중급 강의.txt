@@ -10,3 +10,4 @@ github - https://github.com/joshua1988/vue-intermediate
 
 -섹션3. Todo App - 프로젝트 구현
 ㅁ컴포넌트 생성 및 등록하기
+ㅁ파비콘,아이콘,폰트,반응형 태그 설정하기

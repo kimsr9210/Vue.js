@@ -8,22 +8,10 @@
 </template>
 
 <script>
-import Vue from 'vue'; 
 import TodoHeader from './components/TodoHeader.vue'
 import TodoFooter from './components/TodoFooter.vue'
 import TodoInput from './components/TodoInput.vue'
 import TodoList from './components/TodoList.vue'
-
-let my_cmp = {
-  template: '<div>my component</div>'
-};
-
-new Vue({
-  el:'',
-  components:{
-    'my-cmp' : my_cmp
-  }
-});
 
 export default {
   components:{
