@@ -1,5 +1,7 @@
 vue.js 중급 강좌 - 웹앱 제작으로 배워보는 vue.js ES6, Vuex
 
+git : https://github.com/joshua1988/vue-intermediate/tree/es6/const-let/vue-todo
+
 *앵귤러와 리엑트의 장점을 결합한게 vue.js임
 
 github - https://github.com/joshua1988/vue-intermediate
@@ -21,3 +23,5 @@ v-model input에 입력된 텍스트 값을 동적으로 뷰 인스턴스 안에
 ㅁTodoInput 컴포넌트 코드 정리 및 UI 스타일링
 ㅁTodoList 컴포넌트의 할 일 목록 표시 기능 구현
 ul>li*3
+
+ㅁTodoList 컴포넌트 UI 스타일링

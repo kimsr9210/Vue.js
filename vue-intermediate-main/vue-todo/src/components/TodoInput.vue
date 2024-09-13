@@ -1,64 +1,56 @@
 <template>
-  <div class="inputBox shadow">
-    <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo" />
-    <span class="addContainer" v-on:click="addTodo">
-      <img src="../assets/plus.png" alt="Plus" class="addBtn"/>
-    </span>
-  </div>
+	<div class="inputBox shadow">
+		<input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo">
+		<!-- <button v-on:click="addTodo">add</button> -->
+		<span class="addContainer" v-on:click="addTodo">			
+			<i class="fa-regular fa-plus addBtn">+</i>
+		</span>
+	</div>
 </template>
 
 <script>
 export default {
-  data:function(){
-    return{
-      newTodoItem: ""
-    }
-  },
-  methods:{
-    addTodo:function(){
-      //저장하는 로직
-      console.log("하이");
-      
-      localStorage.setItem(this.newTodoItem, this.newTodoItem); //데이터 호출
-      this.clearInput();
-    },
-    clearInput: function(){
-      this.newTodoItem = '';
-    }
-  }
-}
+	data: function() {
+		return {
+			newTodoItem: ""
+		}
+	},
+	methods: {
+		addTodo: function() {
+			//console.log(this.newTodoItem);
+			localStorage.setItem(this.newTodoItem, this.newTodoItem);
+			this.clearInput();	
+		},
+		clearInput: function() {
+			this.newTodoItem = '';
+		}
+	},
+};
 </script>
 
 <style scoped>
+input:focus {
+	outline: none;
+}
 .inputBox {
-  background: white;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 5px;
-  display: flex; /* Add flexbox for alignment */
-  align-items: center; /* Center items vertically */
+	background: white;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
 }
-
 .inputBox input {
-  border-style: none;
-  font-size: 0.9rem;
-  flex-grow: 1; /* Take up remaining space */
+	border-style: none;
+	font-size: 0.9rem;
 }
-
 .addContainer {
-  float: right;
-  background: linear-gradient(to right, #6478FB, #8763fb); /* Fix gradient background */
-  display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  width: 3rem;
-  height: 3rem; /* Ensure it is square */
-  border-radius: 0 5px 5px 0;
+	float: right;
+	background: linear-gradient(to right, #6475FB, #8763FB);
+	display: block;
+	width: 3rem;
+	border-radius: 0 5px 5px 0;
 }
-
-.addContainer img {
-  width: 1.5rem; /* Adjust as needed */
-  height: 1.5rem; /* Ensure image is square */
-  object-fit: cover; /* Ensure image scales properly */
+.addBtn {
+	color: white;
+	vertical-align: middle;
 }
 </style>
