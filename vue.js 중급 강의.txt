@@ -25,3 +25,4 @@ v-model input에 입력된 텍스트 값을 동적으로 뷰 인스턴스 안에
 ul>li*3
 
 ㅁTodoList 컴포넌트 UI 스타일링
+ㅁTodoList 컴포넌트의 할 일 완료 기능 구현
