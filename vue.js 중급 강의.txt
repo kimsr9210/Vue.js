@@ -2,6 +2,8 @@ vue.js 중급 강좌 - 웹앱 제작으로 배워보는 vue.js ES6, Vuex
 
 git : https://github.com/joshua1988/vue-intermediate/tree/es6/const-let/vue-todo
 
+https://github.com/joshua1988/vue-intermediate/blob/todo-app/components-implementation/vue-todo/src/components/TodoList.vue
+
 *앵귤러와 리엑트의 장점을 결합한게 vue.js임
 
 github - https://github.com/joshua1988/vue-intermediate
@@ -25,8 +27,8 @@ v-model input에 입력된 텍스트 값을 동적으로 뷰 인스턴스 안에
 ul>li*3
 
 ㅁTodoList 컴포넌트 UI 스타일링
-ㅁㅁTodoList 컴퓨넌트 할 일 삭제 기능 구현
+ㅁTodoList 컴퓨넌트 할 일 삭제 기능 구현
 ㅁTodoList 컴포넌트의 할 일 완료 기능 구현
-
+v-bind : html 속성에다가 동적인 값을 부여 할 수있음
 
 
