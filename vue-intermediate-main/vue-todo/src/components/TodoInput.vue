@@ -20,7 +20,7 @@ export default {
 			if(this.newTodoItem !== ''){
 				let obj = {completed : false, item:this.newTodoItem}
 				//console.log(this.newTodoItem);
-				localStorage.setItem(this.newTodoItem, JSON.stringify(obj));
+				localStorage.setItem(this.newTodoItem, JSON.stringify(obj)); //JSON.stringify() : js객체를 String으로 변환해줌
 				this.clearInput();	
 			}
 		},
