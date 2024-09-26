@@ -7,7 +7,7 @@
     <TodoList v-bind:propsdata="todoItems" 
       v-on:removeItem="removeOneItem" 
       v-on:toggleItem="toggleOneItem"></TodoList>
-    <TodoFooter></TodoFooter>
+    <TodoFooter v-on:clearAll="clearAllItem"></TodoFooter>
   </div>
 </template>
 
@@ -24,12 +24,12 @@ export default {
     }
   },
   methods:{
-    addOneItem:function(todoItem){
+    addOneItem: function(todoItem){
       let obj = {completed : false, item: todoItem}
       localStorage.setItem(todoItem, JSON.stringify(obj)); //JSON.stringify() : js객체를 String으로 변환해줌
       this.todoItems.push(obj);
     },
-    removeOneItem:function(todoItem,index){
+    removeOneItem: function(todoItem,index){
       localStorage.removeItem(todoItem.item);
 			this.todoItems.splice(index, 1);
     },
@@ -37,6 +37,10 @@ export default {
       this.todoItems[index].completed = !this.todoItems[index].completed;
 			localStorage.removeItem(todoItem.item);
 			localStorage.setItem(todoItem.item, JSON.stringify(todoItem));
+    },
+    clearAllItem: function(){
+      localStorage.clear();
+      this.todoItems = [];
     }
   },
   created: function() {
