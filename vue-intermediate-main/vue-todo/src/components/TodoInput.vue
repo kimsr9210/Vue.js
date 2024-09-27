@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import Modal from './common/Modal.vue'
+
 export default {
 	data: function() {
 		return {
@@ -33,7 +35,7 @@ export default {
 		}
 	},
 	components: {
-
+		Modal
 	}
 };
 </script>

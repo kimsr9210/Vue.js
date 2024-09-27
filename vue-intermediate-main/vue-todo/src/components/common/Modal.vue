@@ -1,28 +1,40 @@
 <template>
-    <transition name="modal">
-      <div class="modal-mask">
-        <div class="modal-wrapper">
-          <div class="modal-container">
-  
-            <div class="modal-header">
-              <slot name="header">
-                default header
-              </slot>
-            </div>
-  
-            <div class="modal-body">
-              <slot name="body">
-                default body
-              </slot>
+      <transition name="modal">
+        <div class="modal-mask">
+          <div class="modal-wrapper">
+            <div class="modal-container">
+
+              <div class="modal-header">
+                <slot name="header">
+                  default header
+                </slot>
+              </div>
+
+              <div class="modal-body">
+                <slot name="body">
+                  default body
+                </slot>
+              </div>
+
+              <div class="modal-footer">
+                <slot name="footer">
+                  default footer
+                  <button class="modal-default-button" @click="$emit('close')">
+                    OK
+                  </button>
+                </slot>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </transition>
+      </transition>
   </template>
   
-<script>
-</script>
+  <script>
+  export default {
+    name: 'TodoModal'  // 컴포넌트 이름을 두 단어로 변경
+  };
+  </script>
 
   <style>
   .modal-mask {
