@@ -57,3 +57,5 @@ App.vue 파일이 컨테이너의 성격을 갖고 있기 때문에 todoItems를
 v-onClick="" 축약형
 -> @click="" 
 
+ㅁ트렌지션 소개 및 구현
+
