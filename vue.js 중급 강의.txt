@@ -106,3 +106,38 @@ a.push(20);
 
 ㅁ[리팩토링]const와 let
 
+-섹션9.ES6 for Vue.js - 화살표 함수
+ㅁ화살표 함수 소개 및 설명
+*화살표 함수
+함수를 정희할 때 function 이라는 키워드를 사용하지 않고 => 로 대체
+흔히 사용하는 콜백 함수의 문법을 간결화
+
+//ES5 함수 정의 방식
+var sum function(a,b){ }
+
+//ES6 함수 정의 방식
+var sum = (a,b) => { }
+
+ㅁ화살표 함수 실습
+
+-섹션10.ES6 for Vue.js - Enhanced Object Literals
+ㅁ속성 메서드의 축약 특징 설명
+*Enhanced Object Literals : 향상된 객체 리터럴
+객체의 속성을 메서드로 사용할 때 function 예약어를 생략하고 생성 가능
+
+**향상된 객체 리터럴 
+//ES5
+var dictionary = {
+	lookup: function lookup(){
+		console.log('found sth')
+	}
+};
+
+//ES6
+var dictionary = {
+	lookup(){
+		console.log('found sth')
+	}
+};
+
+ㅁ[리팩토링]속성 메서드의 축약 특징 리팩토링
