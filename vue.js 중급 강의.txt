@@ -141,3 +141,9 @@ var dictionary = {
 };
 
 ㅁ[리팩토링]속성 메서드의 축약 특징 리팩토링
+ㅁ속성명의 축약 특징 설명
+*객체의 속성명과 값 명이 동일할 때 아래와 같이 축약 가능
+var figures = 10;
+var dictionary = {
+ figures
+};
