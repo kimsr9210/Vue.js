@@ -54,10 +54,13 @@ export default {
 	},
   components:{
     //컴포넌트 태그명 : 컴포넌트 내용
-    'TodoHeader' : TodoHeader,
-    'TodoFooter' : TodoFooter,
-    'TodoInput' : TodoInput,
-    'TodoList' : TodoList
+    //'TodoList' : TodoList
+
+    //향상된 객체 사용
+    TodoHeader,
+    TodoFooter,
+    TodoInput,
+    TodoList
   }
 }
 </script>
