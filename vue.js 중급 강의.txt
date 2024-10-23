@@ -190,3 +190,5 @@ Vuex구조
 
 -섹션13. Vuex-주요 기술 요소
 ㅁVuex 설치 및 등록
+설치방법~*
+터미널 -> npm i vuex@3 --save
