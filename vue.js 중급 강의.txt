@@ -200,3 +200,7 @@ Vuex구조
 *actions : 비동기 처리 로직을 선언하는 메서드 aysnc methids
 
 ㅁ[리팩토링]state 속성 적용
+ㅁmutations와 commit() 형식 소개
+mutations란 ? 
+state의 값을 변경할 수 있는 유일한 방법이자 메서드
+뮤테이션은 commit()으로 동작시킨다.
