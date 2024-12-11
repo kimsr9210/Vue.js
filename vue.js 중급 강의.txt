@@ -204,3 +204,6 @@ Vuex구조
 mutations란 ? 
 state의 값을 변경할 수 있는 유일한 방법이자 메서드
 뮤테이션은 commit()으로 동작시킨다.
+
+ㅁ[리팩토링&퀴즈] mutations 적용 및 퀴즈 안내
+
