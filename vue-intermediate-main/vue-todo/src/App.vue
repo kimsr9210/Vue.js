@@ -5,7 +5,6 @@
     <TodoInput></TodoInput>
     <!-- <TodoList v-bind:내려보낼 프롭스 속성 이름="현재 위치의 컴포넌트 데이터 속성"></TodoList> -->
     <TodoList v-bind:propsdata="todoItems" 
-      v-on:removeItem="removeOneItem" 
       v-on:toggleItem="toggleOneItem"></TodoList>
     <TodoFooter v-on:clearAll="clearAllItem"></TodoFooter>
   </div>
@@ -24,10 +23,6 @@ export default {
     }
   },
   methods:{
-    removeOneItem(todoItem,index){
-      localStorage.removeItem(todoItem.item);
-			this.todoItems.splice(index, 1);
-    },
     toggleOneItem(todoItem, index){
       this.todoItems[index].completed = !this.todoItems[index].completed;
 			localStorage.removeItem(todoItem.item);
