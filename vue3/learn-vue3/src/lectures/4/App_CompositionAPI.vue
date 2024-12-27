@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { isRef ,onBeforeMount,onMounted,ref } from 'vue'; //ref : 반응형 api
+import { isRef, onBeforeMount, onMounted, ref } from 'vue'; //ref : 반응형 api
 
   export default {
     setup(){
