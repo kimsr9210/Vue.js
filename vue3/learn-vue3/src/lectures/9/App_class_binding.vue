@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { computed, reactive, ref } from 'vue';
+import { computed, ref } from 'vue';
 export default {
     setup () {
         const isActive = ref(true);
